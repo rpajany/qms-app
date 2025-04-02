@@ -1,0 +1,92 @@
+npx create-react-app frontend
+
+npm cache clean --force
+npm install
+npm install web-vitals
+
+npm install webpack@4 webpack-cli@3
+
+npm install --legacy-peer-deps
+npm install web-vitals
+npm i react-router-dom@6
+
+npm install -D tailwindcss
+npm install -D tailwindcss@3.4.17
+npx tailwindcss init
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+npm i axios
+npm i qs -> A querystring parsing and stringifying library with some added security.
+npm install react-webcam
+
+ npm i react-data-table-component@7.6.2
+	 npm i xlsx@0.18.5
+	 npm i file-saver@2.0.5
+	 npm i react-icons@5.3.0
+	 
+	  npm i react-date-range@2.0.1
+	  npm i date-fns@3.6.0
+
+	  npm i react-datepicker@7.4.0
+	  npm i moment@2.30.1
+
+	  npm i sweetalert2@11.14.1
+	  npm install js-file-download --save
+	  npm install react-images-viewer --save --legacy-peer-deps
+
+	  npm install @react-pdf/renderer
+
+	  npm install jspdf jspdf-autotable
+
+	  npm i react-toastify@10.0.4
+	  npm install html2canvas
+------------------------------------------------------------------------
+
+	  const url = "https://example.com/search?query=hello world";
+
+		console.log(encodeURI(url)); 
+		// Output: https://example.com/search?query=hello%20world
+
+		console.log(encodeURIComponent(url)); 
+		// Output: https%3A%2F%2Fexample.com%2Fsearch%3Fquery%3Dhello%20world
+
+-----------------------------------------------------------------------		
+
+
+npm install --save-dev @babel/plugin-proposal-private-property-in-object
+
+npm run build
+
+npm install -g serve
+
+serve -s build  ---> start Frontend after build
+
+npm install -g pm2
+
+pm2 start server.js  ---> start Backend using PM2
+
+npm install cross-env 
+
+Update package.json Modify the start script like this:
+
+
+"scripts": {
+  "start": "cross-env HTTPS=true react-scripts start"
+}
+
+Run Your React App Now, start your React app as usual:
+
+npm start
+(This will run the React dev server with HTTPS on Windows, macOS, and Linux.)
+
+https://techcommunity.microsoft.com/blog/sbs/installing-a-self-signed-certificate-as-a-trusted-root-ca-in-windows-vista/396105
+
+REACT_APP_BACKEND_BASE_URL="https://192.168.1.10:8444/api"
+
+REACT_APP_BACKEND_BASE_URL="https://192.168.72.113:8444/api"
+
+REACT_APP_BACKEND_BASE_URL="http://192.168.40.238:8444/api" - dell server

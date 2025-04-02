@@ -1,0 +1,46 @@
+npm init
+npm i cors@2.8.5
+npm i body-parser@1.19.0
+npm i cors@2.8.5
+
+npm i mysql
+NPM I mysql2@
+
+npm i dotenv@16.4.5
+npm i nodemon -D
+
+npm i multer
+npm i moment@2.30.1
+
+
+Example: Decoding in Node.js
+---------------------------
+
+const encodedQuery = "name%3DJohn%20Doe%26age%3D25";
+const decodedQuery = decodeURIComponent(encodedQuery);
+
+console.log(decodedQuery);
+
+Output:
+name=John Doe&age=25
+----------------------------------------------
+
+Edit the MySQL configuration file (my.cnf or my.ini) to include :-
+[mysqld]
+max_allowed_packet=64M  -> to determines the maximum size of a single communication packet in bytes.
+
+
+https://chatgpt.com/c/676a72ea-391c-8007-a15d-07f04e2557a2
+
+
+POST : http://localhost:8080/upload?folderName=1
+
+
+pm2 start server.js
+pm2 kill 
+pm2 list
+pm2 restart 0 -> argument `id|name|namespace|all|json|stdin'
+
+nginx -s reload
+nginx -s stop
+taskkill /F /IM nginx.exe && start nginx
